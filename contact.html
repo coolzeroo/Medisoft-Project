@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SIlviu Georgescu</title>
+  <link rel="stylesheet" type="text/css" href="./scss/style.css">
+  <link rel="stylesheet" href="./scss/accordion.css">
+  <link rel="stylesheet" href="./scss/contact.css">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+</head>
+
+<header class="header-two-bars">
+  <div class="header-first-bar">
+    <div class="header-limiter">
+      <nav>
+        <a href="#">Groepen</a>
+        <a href="./contact.html">Contact</a>
+        <a href="#">FAQ</a>
+        <a href="#">Smoelenboek</a>
+        <a href="#">Microblog</a>
+        <a href="#">Over ons</a>
+        <a href="#" class="logout-button"><img src="./media/notification-bell.png"></a>
+        <a href="#" class="logout-button"><img src="./media/black-settings-button.png"></a>
+      </nav>
+    </div>
+
+    <div id="logo">
+      <img src="./media/Bitmap.png">
+      <h1>Cura<span>Nu</span></h1><br />
+      <h2>Zorg en welzijn</h2>
+      <h2 id="int">Intranet</h2>
+    </div>
+  </div>
+
+  <div class="header-second-bar">
+    <div class="header-limiter">
+      <div id="search">
+        <input id="input" placeholder="Search..." />
+        <button id="button"><i class="fa fa-search"></i></button>
+        <div class="spinner"><i class="fa fa-spinner"></i></div>
+      </div>
+      <div class="topnav" id="myTopnav">
+        <a href="./index.html" class="active">HOME</a>
+        <a href="#artikelen">ARTIKELEN</a>
+        <a href="#nieuws">NIEUWS</a>
+        <a href="#evenementen">EVENEMENTEN</a>
+        <a href="#kwaliteitshandboek">KWALITEITSHANDBOEK</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+
+    </div>
+  </div>
+</header>
+
+<body>
+  <div class="wrapper">
+    <section class="columns">
+      <div class="column">
+        <div id="container">
+          <header>
+            <h1>Contact pagina</h1>
+          </header>
+
+          <form>
+            <fieldset>
+              <legend>Fields marked with * are required</legend>
+              <br />
+
+              <div id="part-1">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" required>
+                <br />
+                <div id="part-2">
+                  <label for="email">E-mail</label>
+                  <input type="email" name="email" placeholder="account@email.com" id="email" required>
+                </div>
+                <br />
+
+                <label for="">Onderwerp</label>
+                <input type="text" name="onderwerp" id="onderwerp" required>
+                <br />
+                <label for="">Bericht:</label>
+                <textarea name="message" type="text" id="input-message" placeholder="Message"></textarea>
+                <br /><br />
+                <input type="submit" id="submitButton" name="submitButton" value="Send-message">
+                <input type="reset" id="resetButton" value="Reset all info" tabindex="-1">
+            </fieldset>
+          </form>
+        </div>
+      </div>
+
+    </section>
+
+    <footer>
+      <div class="site-info">Copyright © 2019. &nbsp;&nbsp;
+        Created by <a href="https://www.linkedin.com/in/silviu-georgescu-a7595b24/" target="_blank">Silviu Georgescu</a></div>
+    </footer>
+
+  </div>
+
+  <!-- Scripts -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+  <script src="./js/nav.js"></script>
+  <script src="./js/accordion.js"></script>
+
+</body>
+
+</html>

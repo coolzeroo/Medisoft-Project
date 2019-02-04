@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SIlviu Georgescu</title>
+  <link rel="stylesheet" type="text/css" href="./scss/style.css">
+  <link rel="stylesheet" href="./scss/accordion.css">
+  <!--<link href='http://fonts.googleapis.com/css?family=Cookie' rel='stylesheet' type='text/css'>-->
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+</head>
+
+<header class="header-two-bars">
+  <div class="header-first-bar">
+    <div class="header-limiter">
+      <nav>
+        <a href="#">Groepen</a>
+        <a href="./contact.html">Contact</a>
+        <a href="#">FAQ</a>
+        <a href="#">Smoelenboek</a>
+        <a href="#">Microblog</a>
+        <a href="#">Over ons</a>
+        <a href="#" class="logout-button"><img src="./media/notification-bell.png"></a>
+        <a href="#" class="logout-button"><img src="./media/black-settings-button.png"></a>
+      </nav>
+    </div>
+
+    <div id="logo">
+      <img src="./media/Bitmap.png">
+      <h1>Cura<span>Nu</span></h1><br />
+      <h2>Zorg en welzijn</h2>
+      <h2 id="int">Intranet</h2>
+    </div>
+  </div>
+
+  <div class="header-second-bar">
+    <div class="header-limiter">
+      <div id="search">
+        <input id="input" placeholder="Search..." />
+        <button id="button"><i class="fa fa-search"></i></button>
+        <div class="spinner"><i class="fa fa-spinner"></i></div>
+      </div>
+      <div class="topnav" id="myTopnav">
+        <a href="./index.html" class="active">HOME</a>
+        <a href="#artikelen">ARTIKELEN</a>
+        <a href="#nieuws">NIEUWS</a>
+        <a href="#evenementen">EVENEMENTEN</a>
+        <a href="#kwaliteitshandboek">KWALITEITSHANDBOEK</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+   </div>
+  </div>
+</header>
+
+<body>
+  <div class="wrapper">
+    <section class="columns">
+      <div class="column">
+        <div class="accordion">
+          <dl>
+            <dt>
+              <h2 href="#"><span class="arrow"></span>ACCORDION 1</h2>
+            </dt>
+            <dd>
+              <p>Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttito</p>
+            </dd>
+            <dt>
+              <h2 href="#"><span class="arrow down-anim"></span>ACCORDION 2</h2>
+            </dt>
+            <dd class="active">
+              <p>Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttito</p>
+            </dd>
+            <dt>
+              <h2 href="#"><span class="arrow"></span>ACCORDION 3</h2>
+            </dt>
+            <dd>
+              <p>Nullam quis risus eget urna mollis ornare vel eu leo. Lorem ipsum dolor sit amet</p>
+            </dd>
+          </dl>
+        </div>
+        <div class="collapse active">
+          <h2>EVENEMENTEN<img src="./media/calendar.png" class="imgcol"></h2>
+          <p>10/12/2016 Zorgmarathon</p>
+          <hr>
+          <p>12/12/2016 Beurs</p>
+          <hr>
+          <p>30/12/2016 Onze zorgevenement</p>
+        </div>
+
+        <div class="collapse active">
+          <h2>NIEUWS<img src="./media/newspaper.png" class="imgcol"></h2>
+          <div class="tab1">
+            <img src="./media/img1.png" class="imgcon" alt="" />
+            <img src="./media/bitmap4.png" class="imgsoc" alt="" />
+            <p>29/02/2016</p>
+            <b>Zorgmarathon</b>
+          </div>
+          <hr>
+          <div class="tab1">
+            <img src="./media/img2.png" class="imgcon" alt="" />
+            <img src="./media/bitmap4.png" class="imgsoc" alt="" />
+            <p>29/02/2016</p>
+            <b>VIO erkend als theoretisch goed</b>
+          </div>
+          <hr>
+          <div class="tab1">
+            <img src="./media/img3.png" class="imgcon" alt="" />
+            <img src="./media/bitmap4.png" class="imgsoc" alt="" />
+            <p>29/02/2016<</p> <b>Commissiebrief over nieuwe Wlz</b>
+          </div>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="collapse active">
+          <h2>DIRECT NAAR<img src="./media/external-link.png" class="imgcol"></h2>
+          <div class="tab2">
+            <img src="./media/youforce.png" class="imgcon" alt="" />
+            <b>Youforce</b>
+          </div>
+          <hr>
+          <div class="tab2">
+            <img src="./media/bitmap.png" class="imgcon" alt="" />
+            <b>MIP-meldingen</b>
+          </div>
+          <hr>
+          <div class="tab2">
+            <img src="./media/topdesk.png" class="imgcon" alt="" />
+            <b>Topdesk</b>
+          </div>
+        </div>
+        <div class="collapse active">
+          <h2>BLOGS<img src="./media/Shape.png" class="imgcol"></h2>
+          <div class="tab1">
+            <img src="./media/oval22.png" class="imgcon" alt="" />
+            <img src="./media/bitmap4.png" class="imgsoc" alt="" />
+            <b>Jacob Cobijn</b>
+            <p>12/04/2016</p>
+          </div>
+        </div>
+        <div class="collapse active">
+          <h2>KWALITEITSHANDBOEK<img src="./media/kwaliteitshandboek.png" class="imgcol"></h2>
+          <b>Klachtenproceure</b><br>
+          <i>bijgewerk / 18-04-2016</i>
+          <hr>
+          <b>Periodieke test gebruikersgroepen</b><br>
+          <i>bijgewerk / 10-02-2016</i>
+          <hr>
+          <b>Dienstrichtlijn tweede niveau</b><br>
+          <i>bijgewerk / 09-05-2015</i>
+        </div>
+        <div class="collapse active">
+          <h2>PEILINGEN<img src="./media/kwaliteitshandboek.png" class="imgcol"></h2>
+          <p>Er zijn geen peilingen beschikbaar.</p>
+        </div>
+        <div class="collapse active">
+          <h2>MIJN LINKS<img src="./media/external-link.png" class="imgcol"></h2>
+          <p><b>Zorggroep.nl</b>
+            <hr>
+            <p><b>zorgvisie.nl</b></p>
+            <hr>
+            <p><b>medicalfacts.nl</b></p>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="cntr">
+          <div class="cntr-innr">
+            <h2>TELEFOONBOEK</h2>
+            <p>Vind collega’s op naam, trefwoord, functie, etc.</p>
+            <label class="search" for="inpt_search">
+              <input id="inpt_search" type="text" />
+            </label>
+
+          </div>
+        </div>
+        <div class="collapse active">
+          <h2>MICROBLOG<img src="./media/Shape.png" class="imgcol"></h2>
+          <div class="square"></div>
+          <div class="tab1">
+            <img src="./media/oval22.png" class="imgcon" alt="" />
+            <img src="./media/bitmap4.png" class="imgsoc" alt="" />
+            <b>Jacob Cobijn</b>
+            <p>12/04/2016</p>
+          </div>
+        </div>
+        <div class="collapse active">
+          <h2>MIJN GROEPEN<img src="./media/groups.png" class="imgcol"></h2>
+          <div class="tab2">
+            <img src="./media/oval1.png" class="imgcon" alt="" />
+            <b>HRM</b>
+          </div>
+          <hr>
+          <div class="tab2">
+            <img src="./media/oval2.png" class="imgcon" alt="" />
+            <b>Marketing & Communicatie</b>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <footer>
+      <div class="site-info">Copyright © 2019.&nbsp;&nbsp;
+        Created by <a href="https://www.linkedin.com/in/silviu-georgescu-a7595b24/" target="_blank">Silviu Georgescu</a></div>
+    </footer>
+
+  </div>
+
+  <!-- Scripts -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+  <script src="./js/nav.js"></script>
+  <script src="./js/accordion.js"></script>
+
+</body>
+
+</html>
